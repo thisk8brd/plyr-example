@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player test</title>
+    <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+  </head>
+  <body>
+    <div class="content">
+      <div
+        id="player"
+        data-plyr-provider="youtube"
+        data-plyr-embed-id="bTqVqk7FSmY"
+      ></div>
+    </div>
+    <script src="https://cdn.plyr.io/3.5.10/plyr.js"></script>
+    <script>
+      const player = new Plyr("#player", {});
+      window.player = player;
+    </script>
+  </body>
+</html>
